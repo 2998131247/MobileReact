@@ -7,6 +7,6 @@ const home= Loadable({
 });
 
 export default [
-    { path: '/', component: home, exact: true },
+    { path: '/', component: home, exact: process.env.NODE_ENV==='development'? true :false },
   ]
 
